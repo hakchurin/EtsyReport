@@ -1,0 +1,19 @@
+
+
+.content{
+  display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    width:100%;
+    margin: auto;
+
+
+}
+
+div{
+  flex-wrap: wrap;
+  display: flex;
+  width:50%;
+  height:25%;
+  border: 2px solid pink;
+}
