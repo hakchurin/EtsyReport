@@ -5,6 +5,7 @@ var requestSettings = {
     success: function(response) {
       var content = $('.content');
       response.results.forEach(function(current,i,array){
+console.log(response);
         var etsyItem = $('<div></div>').addClass('etsyItem');
         var etsyTitle = $('<h3></h3>');
         var etsyPhoto= $('<img src= "#">');
@@ -16,7 +17,6 @@ var requestSettings = {
         etsyPhoto.attr('src', current.Images[0].url_170x135);
         etsyItem.append(etsyPhoto);
 
-        console.log(current);
 
       });
 
